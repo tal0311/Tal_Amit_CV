@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tal Amit - Full Stack/Frontend Developer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        min-height: 90vh;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        color: #2c3e50;
+      }
+
+      header p {
+        margin: 5px 0;
+        font-size: 1.2em;
+        color: #34495e;
+      }
+
+      .contact-info {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .contact-info a {
+        color: #2980b9;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+
+      details {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #ecf0f1;
+        padding: 10px;
+        transition: all 0.3s ease;
+      }
+
+      details:hover {
+        background-color: #d0dfe5;
+      }
+
+      summary {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #2c3e50;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        list-style: none;
+        outline: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      summary::marker {
+        display: none;
+      }
+
+      summary::after {
+        content: "▼";
+        font-size: 0.8em;
+        color: #2980b9;
+        transition: transform 0.3s ease;
+      }
+
+      details[open] summary::after {
+        transform: rotate(180deg);
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 20px;
+        margin: 10px 0;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+
+      .employment-list li {
+        margin-bottom: 15px;
+      }
+
+      .employment-list strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #2980b9;
+      }
+
+      a {
+        color: #2980b9;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        margin: 0 0 10px 0;
+      }
+      .actions-container {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .actions-container button {
+        padding: 10px 20px;
+        font-size: 1em;
+        font-weight: bold;
+        color: #fff;
+        background-color: #2980b9;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .actions-container button:hover {
+        background-color: #1c6693;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tal Amit</h1>
+        <p>Full Stack/Frontend Developer</p>
+        <hr />
+        <div class="contact-info">
+          <p>
+            <a
+              href="https://www.google.com/maps/place/31%C2%B048'30.0%22N+35%C2%B004'45.0%22E/@31.808333,35.079167,12z/data=!4m4!3m3!8m2!3d31.808333!4d35.079167?hl=en&entry=ttu"
+              target="_blank"
+              >Neve Iilan</a
+            >
+            | Mail:
+            <a href="mailto:tal.amit0311@gmil.com">tal.amit0311@gmil.com</a> |
+            GitHub:
+            <a href="https://github.com/tal0311" target="_blank"
+              >https://github.com/tal0311</a
+            >
+            | LinkedIn:
+            <a href="https://www.linkedin.com/in/tal-amit/" target="_blank"
+              >@tal-amit</a
+            >
+            | Cell: 0543113309
+
+            <a href="https://wa.me/0543113309" target="_blank">WhatsApp me</a>
+          </p>
+        </div>
+      </header>
+
+      <section class="actions-container">
+        <button onclick="toggleDetails()">Toggle Sections</button>
+        <button onclick="downloadPDF()">Download PDF</button>
+        <!-- <button onclick="onUserTrans()">Translate</button> -->
+      </section>
+      <details>
+        <summary>Projects</summary>
+        <ul>
+          <li>
+            <a href="https://tal0311.github.io/google-apps/" target="_blank"
+              >Google-Apps</a
+            >
+          </li>
+          <li>
+            <a href="https://www.npmjs.com/~tal.0311" target="_blank"
+              >NPM package</a
+            >
+          </li>
+          <li>
+            <a href="https://tal0311.github.io/travel-tip-vue/" target="_blank"
+              >TravelTip</a
+            >
+          </li>
+          <li>
+            <a href="https://morena-food-list.vercel.app/" target="_blank"
+              >Morena’s FoodList</a
+            >
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary lang="en">About Me</summary>
+        <!-- <summary lang="he">על עצמי</summary> -->
+        <p lang="en">
+          Reserve Air Force Major, former company commander in the "Kfir"
+          Infantry Brigade. In 2004, I received the President’s badge of merit.
+          Before my career as a programmer, I was responsible for building the
+          infrastructure of large social projects in agricultural settlements in
+          the Upper Galilee and two educational leadership programs for young
+          adults. I am a great team member and leader. Since October 7 I have
+          been in service in the Gaza southern brigade.
+        </p>
+        <!-- <p lang="he">
+          רס"ן במילואים בחיל האוויר, מפקד חברה לשעבר בגדוד "כפיר". בשנת 2004
+          זכיתי בתג הזהב של הנשיא. לפני קריירה כמתכנת, הייתי אחראי לבניית
+          התשתיות של פרויקטים חברתיים גדולים ביישובי החקלאי בגליל העליון ושני
+          תוכניות ניהול הנהגה חינוכיות לבוגרים צעירים. אני חבר צוות ומנהיג
+          מעולה. מאז ה-7 באוקטובר אני משרת בחטיבה הדרומית בעזה.
+        </p> -->
+      </details>
+
+      <details>
+        <summary>Professional Skills</summary>
+        <ul>
+          <li>
+            <strong>Frontend:</strong> Vue.js options/composition API with Vex,
+            React.js, class & function (hooks) components with Redux, Angular14,
+            Typescript, JavaScript ES6^, CSS, Sass, and responsive, mobile-first
+            web design. Well proficient in executing a design to UI.
+          </li>
+          <li>
+            <strong>Backend:</strong> Node.js with Express, REST APIs, graphQL,
+            some Python experience in front and backend.
+          </li>
+          <li><strong>Databases:</strong> MongoDB, SQL, Firebase.</li>
+          <li>
+            <strong>Other:</strong> Authentication with Express session and
+            tokens. PWA, SSR – EJS & PHP, HTMX, Rxjs.
+          </li>
+          <li><strong>Testing:</strong> Jest & Vitest.</li>
+          <li><strong>Automation:</strong> Selenium with Python.</li>
+          <li>
+            <strong>Pen Testing:</strong> Cybersecurity is one of my hobbies,
+            and I've mostly taught myself. I'm familiar with Linux in my daily
+            activities and have a decent grasp of networking and protocols. I
+            also have some experience with penetration testing, including
+            enumeration, hash cracking, reverse shells, and social engineering.
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Previous Employment Experience</summary>
+        <ul class="employment-list">
+          <li>
+            <strong
+              >2023 - Present: Coding Academy, R&D Team leader and project
+              manager at Misterbit.</strong
+            >
+            As part of the position, I am responsible for the development teams
+            of 8 programmers, creating a web Application named Intervid. The
+            project was written using the advanced Vue.js framework. The project
+            requires in-depth familiarity with the server and client side, cloud
+            storage and the ability to work with video streams in an advanced
+            manner.
+          </li>
+          <li>
+            <strong
+              >2022 - Present: Coding Academy Teaching assistant, mentor, and
+              team leader</strong
+            >
+            The position includes training and accompaniment of trainees in the
+            bootcamp course. Providing a professional response to the trainees
+            during the course, delivering lessons, accompanying a team of
+            developers during the sprints.
+          </li>
+          <li>
+            <strong
+              >2014 - 2021: Director of the semi-annual programs and the alumni
+              department at the Upper Galilee Pre-Military Preparatory
+              School.</strong
+            >
+            Management of two educational programs, 65 trainees and another 6
+            staff members. Establishing the infrastructure and leading an
+            organization of 3,000 alumni. As part of the position, I founded
+            several seminars and alumni events for approximately 200
+            participants, for the development of social entrepreneurship, in
+            collaboration with national programs for settlement and leadership
+            development within the IDF and in civilian life.
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Education</summary>
+        <ul>
+          <li>
+            <strong>Tzfat Academic College:</strong> B.A in Criminal Psychology
+            and Law Enforcement.
+          </li>
+          <li>
+            <strong
+              >Orin Spelter - School of Financial Education on behalf of the
+              Securities Authority:</strong
+            >
+            Financing and statistics, Macro and microeconomics, Accounting,
+            Insurance.
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Army Service</summary>
+        <p>
+          2001-2008 Combat military service. Most recent position - Company
+          Commander in the "Kfir" Infantry Brigade. Today (Reserve unit) - Air
+          Force Major in the Southern Brigade in Gaza.
+        </p>
+      </details>
+
+      <details>
+        <summary>Recommendations</summary>
+        <ul>
+          <li>
+            <strong>Oded Stein</strong> Upper Galilee Pre-Military Preparatory
+            School (previous employer): 0526614170
+          </li>
+          <li>
+            <strong>Rotem Bublil</strong> Coding Academy (final project head of
+            team): 0508785040
+          </li>
+          <li>
+            <strong>Adam Berkovich</strong> Coding Academy (Team leader):
+            0504545295
+          </li>
+        </ul>
+      </details>
+    </div>
+
+    <script>
+      function toggleDetails(val) {
+        const details = document.querySelectorAll("details");
+
+        details.forEach((detail) => {
+          if (val) {
+            detail.open = val;
+          } else {
+            detail.open = !detail.open;
+          }
+        });
+      }
+
+      function downloadPDF() {
+        toggleDetails(true);
+        window.print();
+      }
+
+      function onUserTrans(){
+        const heItems= document.querySelectorAll('[lang=he]')
+        const enItems= document.querySelectorAll('[lang=en]')
+        enItems.forEach(item=>{
+        if(item.nodeName !== 'HTML'){
+
+          item.style.display='none'
+        }
+        
+      })
+      
+      heItems.forEach(item=>{
+          if(item.nodeName !== 'HTML'){
+    
+            item.style.display=''
+          }
+
+          document.dir = 'rtl'
+          toggleDetails(true)
+        })
+
+      }
+    </script>
+  </body>
+</html>
